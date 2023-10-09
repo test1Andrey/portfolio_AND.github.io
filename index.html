@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="source/styles/style.css">
+    <link rel="stylesheet" href="source/styles/Clock.css">
+    <link rel="stylesheet" href="source/js/Clock.js">
+    <link rel="stylesheet" href="source/js/main.js">
+    <!-- *****888888***** -->
+    <style>
+        body {
+            background-image: url("source/images/веб-сайта2.jpg");
+            background-size: cover;
+            /* Растянуть изображение на весь экран */
+            background-repeat: no-repeat;
+            /* Запретить повторение фона */
+        }
+    </style>
+
+<!-- Цифровий Годинник -->
+<!-- <script>  
+    setInterval(function () {
+        var now = new Date();
+        var clock = document.getElementById("clock");
+        clock.innerHTML = now.toLocaleTimeString();
+    }, 1000);
+    </script> -->
+<!-- Цифровий Годинник -->
+
+<script>
+    var months = new Array(13);
+    months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+  
+    var time = new Date();
+    var thismonth = months[time.getMonth() + 1];
+    var date = time.getDate();
+    var thisyear = time.getYear();
+    var day = time.getDay() + 1;
+  
+    if (thisyear < 2000)
+        thisyear = thisyear + 1900;
+    if (day == 1) DayofWeek = "Воскресенье";
+    if (day == 2) DayofWeek = "Понедельник";
+    if (day == 3) DayofWeek = "Вторник";
+    if (day == 4) DayofWeek = "Среда";
+    if (day == 5) DayofWeek = "Четверг";
+    if (day == 6) DayofWeek = "Пятница";
+    if (day == 7) DayofWeek = "Суббота";
+  </script>
+              
+  <script>           
+  setInterval(function() {
+    var cd = new Date();
+    var clockdat = document.getElementById("clockdat");
+    clockdat.innerHTML = cd.toLocaleTimeString();
+  }, 1000);
+  </script>
+
+
+
+
+
+<!-- Цифровий Годинник -->
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+
+
+    <title>Розробка Сайтів</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0782ab">
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="source/files/Андрей.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Обо мне</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Анекдоти</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/Andrey43210" target="_blank">Контакты > > ></a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://t.me/Andrey43210" target="_blank">
+                                <img style="width: 35px; margin-inline: 1em;" src="source/files/ТЕЛЕ.png" alt="...">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+
+        <div class="banner-content">
+            <img src="source/images/img-112.gif" alt="">
+        </div>
+
+
+
+
+
+        <div class="container-fluid mt-4"></div>
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+
+
+            <div class="col-lg-8 col-md-12">
+
+                <div class="row px-2">
+
+
+                    <h3 class="blue-text">Вам потрібен веб-сайт ? Ми тут , щоб вам допомогти !</h3>
+
+                    <p class="red-text"><img src="source/images/Андрей.png" alt="" width="200" height="200"
+                            class="leftimg">
+                        Наша команда спеціалізується на розробці сайтів з використанням HTML і CSS, щоб створити для вас
+                        привабливий і функціональний веб-сайт. Ми вдосконалюємо інтернет-простір, роблячи його доступним
+                        для вашого бізнесу або індивідуального проекту<br>
+                        Незалежно від того, чи вам потрібен особистий веб-сайт, корпоративний ресурс або онлайн-магазин,
+                        ми розробимо індивідуальне рішення, яке відповідає вашим потребам. Ми створюємо ефективні та
+                        креативні веб-сайти, які привертають увагу і залучають аудиторію. <br> <br> <span
+                            style="font-size: 30px;"> Наші переваги:</span>
+                        <br> <br> Досвід: ми маємо багаторічний досвід у галузі розробки веб-сайтів. Професіоналізм:
+                        наша
+                        команда складається з висококваліфікованих фахівців з веб-розробки.<br> <br>
+                        Індивідуальний підхід: ми розуміємо ваші потреби і пропонуємо рішення, які відповідають саме
+                        вам.<br> <br>
+                        Зручність: ми надаємо вам повний контроль над вашим веб-сайтом.<br> <br>
+
+                        Почніть свій шлях до інтернет-успіху вже сьогодні! Звертайтеся до нас і отримайте веб-сайт вашої
+                        мрії, який допоможе вам досягти ваших цілей і завоювати інтернет. Наша мета - створювати
+                        інтернет! <br> <br> З нами ви отримаєте веб-сайт, який виділяється серед конкурентів, буде
+                        легким у
+                        користуванні, адаптивним для різних пристроїв і завжди відповідатиме сучасним веб-стандартам. Ми
+                        вдосконалюємо дизайн і забезпечуємо найкращу швидкодію, щоб ваші відвідувачі отримували
+                        найкращий досвід.<br>
+
+                    </p>
+
+                    <p></p>
+                </div>
+
+                <!-- $$$$$*****$$$$$ -->
+
+
+                <h2 class="blue-text-1">Сайти зроблені на html та css</h2>
+                <!-- Карусель -->
+
+
+                <div class="small-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="source/images/таро фон1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="source/images/таро фон2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="source/images/таро фон3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 text-center mt-4">
+                        <h2>Замовити сайт</h2>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <a href="https://t.me/Andrey43210" target="_blank"><img class="call-anim" style="width: 70px;"
+                                src="source/files/ТЕЛЕ.png" alt="..."> </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Карусель -->
+                <h2 class="blue-text-1">ЦІНА САЙТУ ПІД КЛЮЧ В УКРАЇНІ</h2>
+
+                <p class="blue-text">Сайт «під ключ» — це готовий для роботи вебпроєкт, який замовник отримує разом з
+                    логіном і паролем
+                    від нього після закінчення робіт. Останні передбачають комплекс дій, які виконуються найчастіше
+                    командою фахівців: розробку структури сайту, аналіз ринку, створення дизайну, верстання,
+                    програмування, оптимізацію, тестування. Вам достатньо замовити послугу, укласти договір і обговорити
+                    ТЗ, а реалізацію поставлених завдань візьмуть на себе професіонали. </p>
+
+
+                <p class="blue-text">В Україні вартість актуальних пропозицій з розробки сайтів «під ключ» можна умовно
+                    поділити на 3 групи: </p>
+
+                <p class="blue-text">Бюджет — від 12 000 до 35 000 грн. <br></p>
+                <p class="blue-text">Бізнес — від 55 000 до 120 000 грн. <br></p>
+                <p class="blue-text">Преміум — від 150 000 грн і вище. <br></p>
+
+
+
+
+                <!-- АНИМЕ -->
+
+
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-name">
+                            HTML
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            CSS
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            JavaScript
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- АНИМЕ -->
+
+
+
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-12">
+
+
+
+
+
+                <!-- Цифровий Годинник -->
+
+
+                <!-- <div class="row px-2">
+                    <div id="clock" class="digital-clock">
+                        <span id="hours">00</span>
+                        <span>:</span>
+                        <span id="minutes">00</span>
+                        <span>:</span>
+                        <span id="seconds">00</span>
+                    </div>
+                </div> -->
+
+
+
+                
+                <div class="center" style="background-color: #3b424a; padding: 5px;">
+                    <span style="color:rgb(3, 211, 7)">Сегодня:</span>
+                    <span style="color:#ffffff; font-size:14px;">
+                    <script>
+                        document.write(date+" ");
+                        document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+                    </script>
+                    <!-- ( <span id="clockdat" style="color:aqua;"></span> ) -->
+                    <br><br>
+                    <span id="clockdat" style="color: rgb(3, 211, 7); font-size: 30px;"></span>
+
+
+                    </span>
+                  </div>
+
+
+                <!-- Цифровий Годинник -->
+
+
+
+                <div class="row px-2">
+                    <div class="col lg12 my-4 text-center"> <!-- Видалено клас "sidebar" -->
+                        <img style="width: 300px; margin: 0 auto;" src="source/images/Візитка-резюме.jpg" alt="">
+                        <!-- Змінено стиль для зображення -->
+                        <p style="color: #ffffff;">Креативний та привабливий шаблон візитки - резюме. Ви можете
+                            використовувати цей шаблон візитки, резюме та портфоліо. Він має перехід на 36 сторінок, 6
+                            колірних схем на вибір. <br>
+                            <a href="https://watson-vcard.netlify.app/index-dark-slider" target="_blank">Смотреть
+                                Шаблон</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row px-2">
+                    <div class="col lg12 my-4 text-center"> <!-- Видалено клас "sidebar" -->
+                        <img style="width: 300px; margin: 0 auto;" src="source/images/Trip Spot 1.jpg" alt="">
+                        <!-- Змінено стиль для зображення -->
+                        <p style="color: #ffffff;">Адаптивний шаблон для сайту туристичного агентства HTML5 і Bootstrap
+                            4. Це одностраничная тема з елегантним дизайном і красивим зовнішнім виглядом. <br>
+                            <a href="https://bootstraptema.ru/_sf/57/5715.html" target="_blank">Смотреть Шаблон</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row px-2">
+                    <div class="col lg12 my-4 text-center"> <!-- Видалено клас "sidebar" -->
+                        <img style="width: 300px; margin: 0 auto;" src="source/images/таро фон1.jpg" alt="">
+                        <!-- Змінено стиль для зображення -->
+                        <p style="color: #ffffff;">Адаптивний шаблон медичного сайту, чиста, мінімалістична і красиво
+                            оформлена тема з витонченим зовнішнім виглядом, більше того, шаблон має повну чуйність. <br>
+                            <a href="https://bootstraptema.ru/_sf/56/5696.html" target="_blank">Смотреть Шаблон</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row px-2">
+                    <div class="col lg12 my-4 text-center"> <!-- Видалено клас "sidebar" -->
+                        <img style="width: 300px; margin: 0 auto;" src="source/images/таро фон2.jpg" alt="">
+                        <!-- Змінено стиль для зображення -->
+                        <p style="color: #ffffff;"> Односторінковий лендінг шаблон цільової сторінки медичних добавок,
+                            спеціально розроблений для цільових сторінок, продуктів для схуднення та дієти та багато
+                            чого
+                            іншого. <br> <a href="https://bootstraptema.ru/_sf/59/5942.html" target="_blank">Смотреть
+                                Шаблон</a> </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row px-2">
+                    <div class="col lg12 my-4 text-center"> <!-- Видалено клас "sidebar" -->
+                        <img style="width: 300px; margin: 0 auto;" src="source/images/таро фон3.jpg" alt="">
+                        <!-- Змінено стиль для зображення -->
+                        <p style="color: #ffffff;">Односторінковий HTML шаблон швидкого харчування та ресторанів,
+                            преміальний та сучасний шаблон HTML5 та CSS3, який можна використовувати для створення
+                            будь-якого сайту для різних сценаріїв. <br> <a
+                                href="https://bootstraptema.ru/_sf/58/5804.html" target="_blank">Смотреть
+                                Шаблон</a> </p>
+                    </div>
+                </div>
+
+
+                <!-- АНИМЕ -->
+
+                <!-- <div class="row px-2">
+                    <div class="col lg12 my-4 text-center">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-front">
+                                    <img style="width: 300px; margin: 0 auto;" src="source/images/таро фон1.jpg" alt="">
+                                </div>
+                                <div class="card-back">
+                                    <p style="color: #212121;">
+                                        Адаптивний шаблон медичного сайту, чиста, мінімалістична і красиво оформлена
+                                        тема з витонченим
+                                        зовнішнім виглядом, більше того, шаблон має повну чуйність. <br>
+                                        <a href="https://bootstraptema.ru/_sf/56/5696.html" target="_blank">Смотреть
+                                            Шаблон</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+
+                <!-- АНИМЕ -->
+
+
+
+            </div>
+    </section>
+
+
+
+    <footer class="mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 Footer-text text-center">
+                    <p>Усі права захищені 2023</p>
+                </div>
+                <div class="col-lg-4 col-md-12 Footer-text text-center">
+                    <p>Контакти<br>Telegram</p>
+                </div>
+                <div class="col-lg-4 col-md-12 media-links">
+
+                    <a href="https://t.me/Andrey43210" target="_blank"><img style="width: 50px; margin-inline: 1em;"
+                            src="source/files/ТЕЛЕ.png" alt="..."></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
