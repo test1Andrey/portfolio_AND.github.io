@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url('путь-к-шрифту/BookAntiqua-Regular.ttf') format('truetype');
+    /* Укажите путь к файлу .ttf (или другому формату шрифта), если у вас есть файлы шрифта */
+}
+
+/* Примените шрифт к вашему тексту */
+body {
+    font-family: 'Book Antiqua', serif;
+    /* Если браузер не поддерживает шрифт, будет использована обычная serif-замена */
+    font-weight: bold; /* Сделать текст жирным */
+}
+
+
+
+
+body {
+    margin: 15px; /* Додайте відступи по всіх чотирьох сторонах (верх, право, низ, ліво) */
+    background: linear-gradient(165deg, #0782ab 0%, #0782ab 100%);
+}
+
+.footer {
+    margin: 0;
+}
+
+.banner-content {
+    text-align: center; /* Вирівняти текст по центру */
+    padding: 100px 0; /* Встановіть бажані відступи зверху та знизу (у цьому випадку - 100px) */
+}
+
+.banner-content {
+    color: #ffffff; /* Встановіть бажаний колір (білий) */
+}
+
+.s {
+    color: #0782ab;
+}
+/* текст */
+
+.banner-content img {
+    width: 100%; /* Встановіть ширину зображення на 100% */
+    height: auto; /* Автоматично обчислює висоту зображення, щоб зберегти співвідношення сторін */
+}
+
+/* текст */
+.navbar {
+    margin: -15px; 
+}
+
+
+footer {
+    margin: 0;
+}
+
+
+.blue-text {
+    margin-top: 50px; /* Зверху */
+    margin-bottom: 50px; /* Знизу */
+}
+
+
+/* body {
+    
+    background: linear-gradient(165deg, #0d135d 0%, #0342a7 100%);   
+} */
+
+h2 {
+    color: #fffefe;
+}
+
+a {
+    color: rgb(255, 247, 0); /* Измените 'blue' на желаемый цвет, например, 'red', 'green' и т.д. */
+    text-decoration: none; /* Убирает подчеркивание с ссылки */
+}
+
+a:hover {
+    text-decoration: underline; /* Добавляет подчеркивание при наведении на ссылку */
+}
+
+
+
+
+
+.navbar-brand img {
+width: 50px;
+}
+.navbar-toggler {
+    color: #fffefe;
+    background-color: #ffffff00;
+}
+.clearfix.img {
+    width: 50px;
+}
+.sidebar {
+    color: #ffffff;
+    background: linear-gradient(165deg, #0782ab 0%, #0782ab 100%);
+}
+
+
+
+
+
+
+.card {
+    background: linear-gradient(165deg, #0782ab 0%, #0782ab 100%);  
+    color: #ffffff;
+}
+.leftimg {
+    float: left;
+    margin: 7px 7px 7px 0;
+   }
+
+   .rightimg  {
+    float: right;
+    margin: 7px 0 7px 7px;
+   }
+
+   .blue-text {
+    color: #ffffff; /* Цвет текста для абзацев с классом "blue-text" */
+   }
+
+   .red-text {
+    color: #ffffff; /* Цвет текста для абзацев с классом "red-text" */
+   }
+
+   /* КАРУСЕЛЬ */
+
+   .small-carousel {
+    max-width: 90%;
+    /* Установите максимальную ширину по вашему выбору, например, 50% от ширины контейнера */
+    margin: 0 auto;
+    /* Центрируйте карусель по горизонтали */
+    margin-top: 50px; /* Отступ сверху */
+    margin-bottom: 90px; /* Отступ снизу */
+}
+
+.blue-text-1 {
+    text-align: center; /* Центрируем текст по горизонтали */
+    color: #ffffff;/* Устанавливаем цвет текста (если это необходимо) */
+    margin-top: 90px; /* Отступ сверху */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.container-fluid {
+    background: linear-gradient(165deg, #0782ab 0%, #0782ab 100%); 
+}
+
+
+
+.Footer-text {
+    color: #ffffff; 
+    margin-top: 10px; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1 Анима */
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
