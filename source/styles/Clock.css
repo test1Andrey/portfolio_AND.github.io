@@ -1,0 +1,19 @@
+ /* .digital-clock {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #0ba813;
+    margin: 3px;
+} */
+
+.center {
+    margin: 10px;
+    padding: 0;  
+
+}
+
+.skills {
+    margin: 50px;
+    padding: 50;  
+
+}
